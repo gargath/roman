@@ -5,7 +5,7 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-var test_data = map[int]string{
+var testData = map[int]string{
 	1:    "I",
 	2:    "II",
 	3:    "III",
@@ -41,7 +41,7 @@ var test_data = map[int]string{
 
 var _ = Describe("Roman Numerals Converter", func() {
 	It("converts numbers correctly", func() {
-		for d, r := range test_data {
+		for d, r := range testData {
 			Expect(ToRoman(d)).To(Equal(r))
 		}
 	})

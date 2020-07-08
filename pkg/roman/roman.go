@@ -16,6 +16,8 @@ var numerals = map[int]string{
 
 var keys = []int{1000, 500, 100, 50, 10, 5, 1}
 
+// ToRoman converts the integer argument to a string that is its roman numeral
+// representation.
 func ToRoman(number int) string {
 	roman := ""
 	for {
